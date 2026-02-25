@@ -1,18 +1,18 @@
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-function App(props) {
+import EventPlanner from "./components/event_planner/EventPlanner";
+import TodoList from "./components/todo_list/TodoList";
 
-  const currentDate = new Date();
-
+const App = () => {
   return (
-    <div>
-      <h1>Hello world</h1>
-      <p>Current date: {currentDate.toLocaleDateString()}</p>
-      <h2>
-        It is {currentDate.toLocaleDateString()} and the time now is{" "}
-        {currentDate.toLocaleTimeString()}.
-      </h2>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<EventPlanner />} />
+        <Route path="/todo" element={<TodoList />} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;

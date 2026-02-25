@@ -7,4 +7,4 @@ function ref() {
   root.render(<App />);
 }
 
-setInterval(ref, 1000);
+ref();

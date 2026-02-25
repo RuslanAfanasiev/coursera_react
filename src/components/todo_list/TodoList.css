@@ -1,0 +1,112 @@
+/* Reset simplu */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f4f6f9;
+}
+
+/* Container principal */
+.todo-container {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.title {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Input + buton sus */
+.input-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.heading-input {
+  padding: 10px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* Butoane */
+button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  background: #4f46e5;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #3730a3;
+}
+
+/* Zona cu carduri */
+.todo-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Card individual */
+.todo-card {
+  background: white;
+  width: 280px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading + delete */
+.heading_todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.delete-button-heading {
+  background: #ef4444;
+}
+
+.delete-button-heading:hover {
+  background: #b91c1c;
+}
+
+/* Add list section */
+.add_list {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.list-input {
+  flex: 1;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* Lista */
+ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.todo_inside_list {
+  background: #f1f5f9;
+  padding: 6px 8px;
+  border-radius: 6px;
+  margin-bottom: 6px;
+}
