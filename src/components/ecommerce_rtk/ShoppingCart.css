@@ -1,0 +1,123 @@
+.shopping-cart {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.shopping-cart-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.cart-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.cart-item-name {
+    flex: 1;
+    text-align: left;
+    font-size: 16px;
+    color: #333;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+    justify-content: center;
+}
+
+.quantity-controls button {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.quantity-controls button:hover {
+    background-color: #e0e0e0;
+}
+
+.quantity-controls span {
+    color: #333;
+}
+
+.remove-item-btn {
+    flex: 1;
+    text-align: right;
+    padding: 6px 14px;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    max-width: 100px;
+    margin-left: auto;
+}
+
+.remove-item-btn:hover {
+    background-color: #c0392b;
+}
+
+.cart-footer {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.clear-cart-btn {
+    padding: 12px 24px;
+    background-color: #27ae60;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.clear-cart-btn:hover {
+    background-color: #219150;
+}
+
+.total-amount {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.super-coins {
+    text-align: center;
+    margin-top: 30px;
+    color: #333;
+}
+
+.super-coins-title {
+    font-size: 22px;
+    color: #333;
+}
+
+.super-coins-info {
+    font-size: 16px;
+    color: #555;
+}
