@@ -1,35 +1,45 @@
-import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import React, { useState } from "react";
+import "./App.css";
+import ConferenceEvent from "./components/conference_event_planner/ConferenceEvent";
+import AboutUs from "./components/conference_event_planner/AboutUs";
 
-import EventPlanner from "./components/event_planner/EventPlanner";
-import TodoList from "./components/todo_list/TodoList";
-import FetchData from "./components/fetch_data/FetchData";
-import FetchYogaData from "./components/fetch_data/FetchYogaData";
-import FeedbackForm from "./components/feedback_form/FeedbackForm";
-import ProductList from "./components/ecommerce_rtk/ProductList";
-import ShoppingCart from "./components/ecommerce_rtk/ShoppingCart";
-import SuperCoin from "./components/ecommerce_rtk/SuperCoin";
+function App() {
+  const [showVenue, setShowVenue] = useState(false);
 
-const App = () => {
+  const handleGetStarted = () => {
+    setShowVenue(true);
+  };
+
   return (
-    <Router>
-      <Routes>
-        {/* <Route path="/" element={<EventPlanner />} />
-        <Route path="/todo" element={<TodoList />} />
-        <Route path="/fetch" element={<FetchData />} /> */}
-        {/* <Route path="/" element={<FetchYogaData />} /> */}
-        {/* <Route path="/" element={<FeedbackForm />} /> */}
-        {/* <Route path="/" element={<ProductList />} /> */}
-        <Route path="/" element={
-          <>
-            <ProductList />
-            <ShoppingCart />
-            <SuperCoin />
-          </>
-        } />
-      </Routes>
-    </Router>
+    <>
+      <header className="first_page">
+        <div className="main_event">
+          <div className="first_page_name_btn">
+            <h1 className="budget_heading">Conference Expense Planner</h1>
+            <p className="budget_sentence">
+              {" "}
+              Plan your next major event with us!
+            </p>
+            <div className="getstarted_btn">
+              <button
+                onClick={() => handleGetStarted()}
+                className="get-started-btn"
+              >
+                Get Started
+              </button>
+            </div>
+          </div>
+          <div className="aboutus_main">
+            <AboutUs />
+          </div>
+        </div>
+      </header>
+
+      <div className={`event-list-container ${showVenue ? "visible" : ""}`}>
+        <ConferenceEvent />
+      </div>
+    </>
   );
-};
+}
 
 export default App;

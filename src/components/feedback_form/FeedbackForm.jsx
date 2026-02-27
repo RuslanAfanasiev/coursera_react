@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 import "./FeedbackForm.css";
 
-
-
-
 const FeedbackForm = () => {
   const [formData, setFormData] = useState({
     name: "",
